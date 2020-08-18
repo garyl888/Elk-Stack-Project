@@ -22,12 +22,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly __available_, in addition to restricting _access____ to the network.
-- What aspect of security do load balancers protect? __Load balancers allow access to the web server Virtual Machines. They provide "Redundancy" so that if one server goes down the other will be able to compensate for the traffic. Thus it protects the Availability aspect of the CIA Triad.__
+Load balancing ensures that the application will be highly ___available__, in addition to restricting __access__ to the network.
+- What aspect of security do load balancers protect? __Load balancers allow access to the web server Virtual Machines. They provide "Redundancy" so that if one server goes down the other will be able to compensate for the traffic. Thus, it protects the Availability aspect of the CIA Triad.__
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __files__ and __system__logs.
-- What does Filebeat watch for? _system logs_
-- What does Metricbeat record?  _system metrics_
+- What does Filebeat watch for? __System Logs__
+- What does Metricbeat record?  __System Metrics__
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -44,10 +44,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the __Jump Box__ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _My_HOME_IPAddress_98.199.XX.XX_
+- __My_HOME_IPAddress_98.199.XX.XX__
 
 Machines within the network can only be accessed by _Jump Box with Ansible Docker_.
-- Which machine did you allow to access your ELK VM? What was its IP address? _Jump-Box-Provisioner_ _10.0.0.4_
+- Which machine did you allow to access your ELK VM? What was its IP address? __Jump-Box-Provisioner__ __10.0.0.4__
 
 A summary of the access policies in place can be found in the table below.
 
@@ -61,10 +61,10 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- What is the main advantage of automating configuration with Ansible?_Allows_you_to_configure_various_machines_all_from_one_place._
+- What is the main advantage of automating configuration with Ansible?__Allows_you_to_configure_various_machines_all_from_one_place.__
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- _In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Install.docker.io
 - Install python3-pip
 - Install docker module
@@ -73,12 +73,12 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 (https://github.com/garyl888/Elk-Stack-Project/blob/master/Images/docker%20ps.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _Web-1&Web-2_10.0.0.7&10.0.0.8_
+- __Web-1_&_Web-2__10.0.0.7&10.0.0.8__
 
 We have installed the following Beats on these machines:
 - _Filebeat_
